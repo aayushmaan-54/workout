@@ -1,0 +1,128 @@
+{
+  "settings": {
+    "rotation": ["strengthA", "strengthB", "athletic"],
+    "streakBreaksAfterRestDays": 2,
+    "defaultRepTarget": "8-15 reps",
+    "defaultTimeTarget": "20-30 sec"
+  },
+  "warmup": [
+    { "id": "jumping-jacks", "name": "Jumping jacks", "detail": "30 sec" },
+    { "id": "high-knees", "name": "High knees", "detail": "30 sec" },
+    { "id": "cat-cow", "name": "Cat-cow", "detail": "8 reps" },
+    { "id": "worlds-greatest-stretch", "name": "World's greatest stretch", "detail": "5 per side" },
+    { "id": "wall-angels", "name": "Wall angels", "detail": "10 reps" },
+    { "id": "reverse-snow-angels", "name": "Reverse snow angels", "detail": "10 reps" }
+  ],
+  "stretches": [
+    { "id": "deep-squat-hold", "name": "Deep squat hold", "detail": "30-45 sec" },
+    { "id": "couch-stretch", "name": "Couch stretch", "detail": "30-45 sec per side" },
+    { "id": "pigeon-stretch", "name": "Pigeon stretch", "detail": "30-45 sec per side" },
+    { "id": "cobra-pose", "name": "Cobra pose", "detail": "30-45 sec" },
+    { "id": "doorway-chest-stretch", "name": "Doorway chest stretch", "detail": "30-45 sec" },
+    { "id": "toe-touches", "name": "Toe touches", "detail": "30-45 sec" },
+    { "id": "shoulder-dislocates", "name": "Towel shoulder dislocates", "detail": "10 reps" },
+    { "id": "bridge-hold", "name": "Bridge hold", "detail": "30-45 sec" }
+  ],
+  "workouts": {
+    "strengthA": {
+      "name": "Strength A",
+      "format": "sets",
+      "sets": 3,
+      "restSeconds": 75,
+      "slots": [
+        { "slot": "Push", "options": [
+          { "id": "pushups", "name": "Push-ups", "type": "reps" },
+          { "id": "decline-pushups", "name": "Decline push-ups", "type": "reps" },
+          { "id": "diamond-pushups", "name": "Diamond push-ups", "type": "reps" }
+        ]},
+        { "slot": "Pull", "options": [
+          { "id": "pullups", "name": "Pull-ups", "type": "reps", "note": "No bar? Swap to table rows" },
+          { "id": "negative-pullups", "name": "Negative pull-ups", "type": "reps", "note": "Lower slowly, 3-5 sec" }
+        ]},
+        { "slot": "Legs", "options": [
+          { "id": "bulgarian-split-squats", "name": "Bulgarian split squats", "type": "reps", "perSide": true },
+          { "id": "reverse-lunges", "name": "Reverse lunges", "type": "reps", "perSide": true }
+        ]},
+        { "slot": "Hamstrings/Glutes", "options": [
+          { "id": "single-leg-glute-bridge", "name": "Single-leg glute bridge", "type": "reps", "perSide": true }
+        ]},
+        { "slot": "Core", "options": [
+          { "id": "plank", "name": "Plank", "type": "time" }
+        ]},
+        { "slot": "Core 2", "options": [
+          { "id": "leg-raises", "name": "Leg raises", "type": "reps" }
+        ]},
+        { "slot": "Grip", "options": [
+          { "id": "dead-hang", "name": "Dead hang", "type": "time" }
+        ]}
+      ]
+    },
+    "strengthB": {
+      "name": "Strength B",
+      "format": "sets",
+      "sets": 3,
+      "restSeconds": 75,
+      "slots": [
+        { "slot": "Push", "options": [
+          { "id": "pike-pushups", "name": "Pike push-ups", "type": "reps" },
+          { "id": "chair-dips", "name": "Chair dips", "type": "reps" }
+        ]},
+        { "slot": "Pull", "options": [
+          { "id": "table-rows", "name": "Table rows", "type": "reps", "note": "Use a sturdy table" },
+          { "id": "scapular-pullups", "name": "Scapular pull-ups", "type": "reps" }
+        ]},
+        { "slot": "Legs", "options": [
+          { "id": "cossack-squats", "name": "Cossack squats", "type": "reps", "perSide": true },
+          { "id": "wall-sit", "name": "Wall sit", "type": "time", "target": "30-60 sec" }
+        ]},
+        { "slot": "Hamstrings/Glutes", "options": [
+          { "id": "single-leg-rdl", "name": "Single-leg RDL", "type": "reps", "perSide": true }
+        ]},
+        { "slot": "Calves", "options": [
+          { "id": "calf-raises", "name": "Standing calf raises", "type": "reps", "target": "15-20 reps" }
+        ]},
+        { "slot": "Core", "options": [
+          { "id": "side-plank", "name": "Side plank", "type": "time", "perSide": true }
+        ]},
+        { "slot": "Core 2", "options": [
+          { "id": "hollow-hold", "name": "Hollow hold", "type": "time" }
+        ]},
+        { "slot": "Grip", "options": [
+          { "id": "towel-hang", "name": "Towel hang", "type": "time" },
+          { "id": "farmers-hold", "name": "Farmer's hold", "type": "time", "note": "Buckets of water or heavy bags work" }
+        ]}
+      ]
+    },
+    "athletic": {
+      "name": "Athletic Day",
+      "format": "circuit",
+      "rounds": 3,
+      "restSeconds": 40,
+      "slots": [
+        { "slot": "Cardio", "options": [
+          { "id": "skipping", "name": "Skipping", "type": "time", "target": "60 sec" }
+        ]},
+        { "slot": "Crawl", "options": [
+          { "id": "duck-walk", "name": "Duck walk", "type": "time", "target": "30 sec" },
+          { "id": "bear-crawl", "name": "Bear crawl", "type": "time", "target": "30 sec" }
+        ]},
+        { "slot": "Jump", "options": [
+          { "id": "broad-jumps", "name": "Broad jumps", "type": "reps", "target": "5 reps" },
+          { "id": "skater-hops", "name": "Skater hops", "type": "reps", "perSide": true, "target": "10 reps" }
+        ]},
+        { "slot": "Wrestling", "options": [
+          { "id": "sprawls", "name": "Sprawls", "type": "reps", "target": "8-12 reps" },
+          { "id": "burpees", "name": "Burpees", "type": "reps", "target": "8-12 reps" }
+        ]},
+        { "slot": "Desi", "options": [
+          { "id": "hindu-pushups", "name": "Hindu push-ups (dand)", "type": "reps", "target": "10-15 reps" },
+          { "id": "hindu-squats", "name": "Hindu squats (baithak)", "type": "reps", "target": "20-30 reps" }
+        ]},
+        { "slot": "Core", "options": [
+          { "id": "mountain-climbers", "name": "Mountain climbers", "type": "time", "target": "30 sec" },
+          { "id": "bicycle-crunches", "name": "Bicycle crunches", "type": "reps", "target": "20 reps" }
+        ]}
+      ]
+    }
+  }
+}
